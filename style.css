@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* font-family: 'Lato', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    background-color: aliceblue;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    background-color: lightblue;
+    /* background: linear-gradient(to right, #00093c, #2d0b00); */
+
+    
+    /* background-image: linear-gradient(green, yellowgreen); */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    padding: auto 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header a{
+    /* margin-top: 20px; */
+    text-decoration: none;
+    /* text-align: center; */
+}
+
+header .logo{
+    margin-top: 20px;
+    font-weight: bolder;
+    font-size: 25px;
+    color: red;
+    margin-left: 15px;
+}
+
+header .navbar ul{
+    list-style: none;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+    
+}
+
+header .navbar ul li a{
+    font-size: 20px;
+    padding: 20px;
+    display: block;
+    color: green;
+    text-decoration: none;
+
+}
+
+header .navbar ul li a:hover{
+    background: green;
+    color: white;
+    border: .8px solid white;
+    border-radius: 15px;
+    z-index: -1000;
+}
+
+
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: lightblue;
+    display: none;
+    
+
+}
+header .navbar ul li ul li{
+    width: 100%;
+    /* border-top: 1px solid green; */
+    border: 1px solid white;
+    border-radius: 15px;
+
+}
+
+header .navbar ul li ul li ul{
+    left: 200px;
+    top: 0;
+    
+}
+
+header .navbar ul li:focus-within >ul,
+header .navbar ul li:hover >ul{
+    display: initial;
+    border-radius: 15px;
+}
+
+@media(max-width:390px){
+    header{
+        padding: 20px;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: skyblue;
+        border-top: 1px solid gray;
+    }
+    header .navbar ul li {
+        width: 100%;
+    }
+    header .navbar ul li ul{
+        position: relative;
+        width: 100%;
+    }
+    header .navbar ul li ul li{
+        background: cadetblue;
+    }
+    header .navbar ul li ul li ul{
+        width: 100%;
+        left: 0;
+    }
+}
+
+/* nav bar end here */
+
+/* footer start */
+
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 25px;
+}
+
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.col:nth-child(2),.col:nth-child(3){
+    flex-basis: 25%;
+}
+
+.logo{
+    width: 80px;
+    margin-bottom: 30px;
+}
+
+.col h3{
+    width: fit-content;
+    margin-bottom: 30px;
+    position: relative;
+}
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.col ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+.col ul li a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.social-icon .fa-brands{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 34px;
+    color: blue;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.social-icon .contact .fa-brands{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 32px;
+    color: green;
+    font-weight: bolder;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+hr{
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+footer .copyright{
+    text-align: center;
+}
+
+
+@media (max-width:760px){
+    footer{
+        bottom: unset;
+    }
+    .col{
+        flex-basis: 100%;
+        /* padding: 10px; */
+    }
+    
+    .col:nth-child(2),.col:nth-child(3){
+        flex-basis: 100%;
+    }
+}
