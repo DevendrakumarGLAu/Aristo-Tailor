@@ -143,6 +143,7 @@ footer{
     border-top-left-radius: 125px;
     font-size: 13px;
     line-height: 25px;
+    position: fixed;
 }
 
 .row{
