@@ -146,7 +146,7 @@ header .navbar ul li:hover >ul{
 }
 
 .slider-image > div:hover {
-    flex: 3;
+    flex: 6;
 }
 
 /* nav bar end here */
