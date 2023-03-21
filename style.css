@@ -136,7 +136,8 @@ header .navbar ul li:hover >ul{
 .slider-image{
     display: flex;
     height: 20rem;
-    gap: 1rem;
+    gap: .8rem;
+     overflow-x: scroll;
 }
 
 .slider-image > div{
