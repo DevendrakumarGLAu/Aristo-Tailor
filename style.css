@@ -159,6 +159,8 @@ header .navbar ul li:hover >ul{
 
 .slider-image > div:hover {
     flex: 7;
+    width: 70%;
+    
 }
 
 /* footer start */
@@ -265,3 +267,116 @@ ul{
         margin-bottom: 30px;
     }
 }
+
+/* about us start */
+
+.section
+{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ddd;
+}
+
+.container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.content-section{
+    float: left;
+    width: 55%;
+}
+.image-section{
+    float: right;
+    width: 40%;
+}
+
+.image-section img{
+    width: 100%;
+    height: auto;
+    margin-top: 95px;
+}
+
+.content-section .title{
+    text-transform: uppercase;
+    font-size: 28px;
+    text-align: center;
+    color: green;
+}
+
+.content-section .content h3{
+    margin-top: 20px;
+    color: #5d5d5d;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.social p{
+    color: green;
+    margin-top: 25px;
+    line-height: 1.5;
+    font-size: 20px;
+    
+}
+
+.content-section .social i{
+    margin-top: 20px;
+    margin-right: 10px;
+    font-size: 35px;
+    
+}
+
+.content-section .social i:hover{
+    padding-left: 5px;
+    font-size: 40px;
+}
+
+@media screen and (max-width:768px) {
+    .container{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+    .content-section{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    .image-section{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    
+}
+@media screen and (max-width:390px) {
+    .container{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+    .content-section{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    .image-section{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    
+}
+
+
+/* about us end  */
