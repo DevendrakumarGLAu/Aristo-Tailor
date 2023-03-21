@@ -14,7 +14,7 @@ body{
 }
 
 header{
-    position: fixed;
+    position: sticky;
     width: 100%;
     background-color: lightblue;
     /* background: linear-gradient(to right, #00093c, #2d0b00); */
@@ -67,7 +67,7 @@ header .navbar ul li a:hover{
     color: white;
     border: .8px solid white;
     border-radius: 15px;
-    z-index: -1000;
+    z-index: -1000;         
 }
 
 
@@ -130,6 +130,9 @@ header .navbar ul li:hover >ul{
     }
 }
 
+/* nav bar end here */
+
+
 .slider-image{
     display: flex;
     height: 20rem;
@@ -142,124 +145,11 @@ header .navbar ul li:hover >ul{
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto 100%;
-    transition: all .8s cubic-bezier(0.25, 0.4, 0.4, 1.4);
+    transition: all .8s cubic-bezier(0.25, 0.4, 0.4, 1.5);
 }
 
 .slider-image > div:hover {
-    flex: 6;
-}
-
-/* nav bar end here */
-
-/* footer start */
-
-footer{
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    background: linear-gradient(to right, #00093c, #2d0b00);
-    color: #fff;
-    padding: 100px 0 30px;
-    border-top-left-radius: 125px;
-    font-size: 13px;
-    line-height: 25px;
-    position: fixed;
-}
-
-.row{
-    width: 85%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.col{
-    flex-basis: 25%;
-    padding: 10px;
-}
-
-.col:nth-child(2),.col:nth-child(3){
-    flex-basis: 25%;
-}
-
-.logo{
-    width: 80px;
-    margin-bottom: 30px;
-}
-
-.col h3{
-    width: fit-content;
-    margin-bottom: 30px;
-    position: relative;
-}
-.email-id{
-    width: fit-content;
-    border-bottom: 1px solid #ccc;
-    margin: 20px 0;
-}
-
-.col ul li{
-    list-style: none;
-    margin-bottom: 12px;
-}
-
-.col ul li a{
-    text-decoration: none;
-    color: white;
-
-}
-
-.social-icon .fa-brands{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    font-size: 34px;
-    color: blue;
-    background: #fff;
-    margin-right: 15px;
-    cursor: pointer;
-}
-
-.social-icon .contact .fa-brands{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    font-size: 32px;
-    color: green;
-    font-weight: bolder;
-    background: #fff;
-    margin-right: 15px;
-    cursor: pointer;
-}
-
-hr{
-    width: 100%;
-    border: 0;
-    border-bottom: 1px solid #ccc;
-    margin: 20px auto;
-}
-
-footer .copyright{
-    text-align: center;
+    flex: 7;
 }
 
 
-@media (max-width:760px){
-    footer{
-        bottom: unset;
-    }
-    .col{
-        flex-basis: 100%;
-        /* padding: 10px; */
-    }
-    
-    .col:nth-child(2),.col:nth-child(3){
-        flex-basis: 100%;
-    }
-}
